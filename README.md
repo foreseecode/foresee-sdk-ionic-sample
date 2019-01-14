@@ -1,6 +1,8 @@
 # foresee-sdk-ionic-sample
 This is a test app for testing the ForeSee cordova plugin. This app uses Ionic.
 
+Note that if you use ionic serve and this loads in a browser, the cordova plugins may not work. Always run this on an emulated / real device.
+
 ## Install Dependencies
 Run the following command in the project's root directory:
 
@@ -68,9 +70,6 @@ Run the following command in the project's root directory:
    You probaby also want to specify a target (e.g. `--target="iPhone-X, 12.0"`). Putting it all together:
 
    `$ ionic cordova emulate ios -- --buildFlag="-UseModernBuildSystem=0" --target="iPhone-X, 12.0"`
-
-
-Note that if you use ionic serve and this loads in a browser, the cordova plugins may not work. Always run this on an emulated / real device.
 
 ## Images
 1. Application Icon & Splash Screen images:
