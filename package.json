@@ -1,7 +1,7 @@
 {
   "name": "ForeSeeSDKIonicSample",
   "version": "0.0.1",
-  "author": "Ionic Framework",
+  "author": "ForeSee",
   "homepage": "http://ionicframework.com/",
   "private": true,
   "scripts": {
@@ -42,7 +42,7 @@
     "@ionic/app-scripts": "3.2.1",
     "typescript": "~2.6.2"
   },
-  "description": "An Ionic project",
+  "description": "An Ionic ForeSee project",
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},
