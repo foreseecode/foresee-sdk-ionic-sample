@@ -17,8 +17,13 @@ export class MyApp {
       cordova.plugins.ForeSeeAPI.setDebugLogEnabled([true], function success(data) {
         console.log("debug enabled success: " + data)
       });
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
+      //Need to start the SDK manually if the platform is iOS.
+      //Android is automatically started.
+      if(platform.is("ios")) {
+        cordova.plugins.ForeSeeAPI.start(function success(data) {
+          console.log("start success: " + data)
+        });
+      }
       statusBar.styleDefault();
       splashScreen.hide();
     });

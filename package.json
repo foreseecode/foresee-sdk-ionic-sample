@@ -26,7 +26,7 @@
     "@ionic/storage": "2.2.0",
     "ForeSeeAPI": "git+https://github.com/foreseecode/foresee-sdk-cordova-plugin.git#story/MOBILSDK-2274-1",
     "cordova-android": "7.1.4",
-    "cordova-ios": "4.5.5",
+    "cordova-ios": "^4.5.5",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-foresee": "https://github.com/foreseecode/foresee-sdk-cordova-plugin.git#story/MOBILSDK-2274-1",
     "cordova-plugin-ionic-keyboard": "^2.1.3",
