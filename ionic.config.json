@@ -1,5 +1,7 @@
 {
   "name": "ForeSeeSDKIonicSample",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
