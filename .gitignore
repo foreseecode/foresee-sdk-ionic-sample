@@ -27,7 +27,9 @@ platforms/
 plugins/
 plugins/android.json
 plugins/ios.json
-www/
+www/*
+!/www/foresee_configuration.json
+!/www/custom_config.json
 $RECYCLE.BIN/
 
 .DS_Store

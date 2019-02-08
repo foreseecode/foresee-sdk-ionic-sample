@@ -4,6 +4,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+
+declare var cordova;
 @Component({
   templateUrl: 'app.html'
 })
@@ -12,8 +14,16 @@ export class MyApp {
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
+      cordova.plugins.ForeSeeAPI.setDebugLogEnabled([true], function success(data) {
+        console.log("debug enabled success: " + data)
+      });
+      //Need to start the SDK manually if the platform is iOS.
+      //Android is automatically started.
+      if(platform.is("ios")) {
+        cordova.plugins.ForeSeeAPI.start(function success(data) {
+          console.log("start success: " + data)
+        });
+      }
       statusBar.styleDefault();
       splashScreen.hide();
     });

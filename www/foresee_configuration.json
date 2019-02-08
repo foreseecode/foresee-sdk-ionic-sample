@@ -1,0 +1,23 @@
+{
+    "clientId": "FSRTESTINGCODECID12345==",
+    "notificationType": "IN_SESSION",
+    "repeatDaysAfterDecline": 3,
+    "repeatDaysAfterComplete": 3,
+    "repeatDaysAfterAccept": 3,
+    "measures": [
+        {
+            "surveyId": "iphone_app_QA",
+            "significantEventThresholds": {
+                "sig_event_test": 3
+            }
+        }
+    ],
+	"invite": {
+        "logo": "foresee_logo",
+        "header": "invite_header",
+		"baseColor": [235, 43, 61]
+	},
+    "cppParameters": {
+        "cppExampleName": "cppExampleValue"
+    }
+}

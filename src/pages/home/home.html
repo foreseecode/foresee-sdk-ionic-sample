@@ -1,14 +1,25 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      ForeSee Ionic In Session Sample
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div text-center>
+    <ion-img width="100" height="100" src="assets/imgs/foresee_logo.png"></ion-img>
+  </div>
+
+  This sample demonstrates the In Session type of invitation.<br><br>
+
+  In this example, Significant Events are used to qualify for eligibility for the invitation. The threshold is set to 3. Tap the Increment SE button 3 times to meet eligibility.<br><br>
+
+  Tapping the Check Eligibility button will trigger an eligibility check. If our significant event is at or past our threshold, the invite will present. <br><br>
+
+  Once the invite is shown, the SDK drops into an idle state until the repeat days have elapsed. Click Reset State to reset the state of the SDK. <br><br>
+  
+  <button ion-button color="primary" full (click)='incrementSignificantEvent();'>Increment Significant Event</button>
+  <button ion-button color="primary" full (click)='checkEligibility();'>Check Eligibility</button>
+  <button ion-button color="primary" full (click)='resetState();'>Reset State</button>
 </ion-content>
