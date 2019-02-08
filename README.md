@@ -4,7 +4,7 @@ This is a test app for testing the ForeSee cordova plugin. This app uses Ionic.
 Note that if you use ionic serve and this loads in a browser, the cordova plugins may not work. Always run this on an emulated / real device.
 
 ## Install Dependencies
-Run the following command in the project's root directory:
+Regardless of platform, run the following command in the project's root directory:
 
 `$ npm install`
 
@@ -15,8 +15,8 @@ Run the following command in the project's root directory:
 1. Build and run:
 
    ```
-   $ ionic build
-   $ cordova run android
+   $ ionic build android
+   $ ionic cordova run android
    ```
 
 ## iOS Installation
@@ -55,13 +55,13 @@ Run the following command in the project's root directory:
 1. Build and run:
 
    ```
-   $ ionic cordova build
-   $ cordova run ios
+   $ ionic cordova build ios
+   $ ionic cordova run ios
    ```
 
    Or run:
    
-   `$ cordova emulate ios`
+   `$ ionic cordova emulate ios`
 
    As of Xcode 10.x you'll need to add the `UseModernBuildSystem=0` build flag: 
 

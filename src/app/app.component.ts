@@ -13,18 +13,21 @@ export class MyApp {
   rootPage:any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+
     platform.ready().then(() => {
       cordova.plugins.ForeSeeAPI.setDebugLogEnabled([true], function success(data) {
         console.log("debug enabled success: " + data)
       });
-      //Need to start the SDK manually if the platform is iOS.
+      
+      // If the platform is iOS, you must start the SDK manually
       //Android is automatically started.
       if(platform.is("ios")) {
         cordova.plugins.ForeSeeAPI.start(function success(data) {
           console.log("start success: " + data)
         });
       }
-      statusBar.styleDefault();
+
+      statusBar.styleLightContent();
       splashScreen.hide();
     });
   }

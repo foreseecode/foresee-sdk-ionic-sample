@@ -1,14 +1,7 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      ForeSee Ionic In Session Sample
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding>
+
   <div text-center>
-    <ion-img width="100" height="100" src="assets/imgs/foresee_logo.png"></ion-img>
+    <ion-img style="width: 90vw; height:30vh; background: transparent !important;" src="assets/imgs/foresee_logo_2.png"></ion-img>
   </div>
 
   This sample demonstrates the In Session type of invitation.<br><br>
@@ -20,6 +13,9 @@
   Once the invite is shown, the SDK drops into an idle state until the repeat days have elapsed. Click Reset State to reset the state of the SDK. <br><br>
   
   <button ion-button color="primary" full (click)='incrementSignificantEvent();'>Increment Significant Event</button>
+
   <button ion-button color="primary" full (click)='checkEligibility();'>Check Eligibility</button>
+  
   <button ion-button color="primary" full (click)='resetState();'>Reset State</button>
+
 </ion-content>
