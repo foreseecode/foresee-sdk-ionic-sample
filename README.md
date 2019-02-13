@@ -15,7 +15,7 @@ Regardless of platform, run the following command in the project's root director
 1. Build and run:
 
    ```
-   $ ionic build android
+   $ ionic cordova build android
    $ ionic cordova run android
    ```
 
